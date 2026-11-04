@@ -1,16 +1,16 @@
-def countdown(number):
-    if number == 0: #? base case
-        print("Go!")
-    else:
-        print(number)
-        countdown(number-1) #? Recursive case, Progress (number-1)
-countdown(3)
+value = 4725 #int(input("enter number "))
+total = 0
+while value != value //10:
+    total += (value % 10)
+    value = value // 10
+print(total)
 
-def reduce(number):
-    if number == 0:
-        print(number)
-        return
+def sum(number):
+    if len(str(number)) == 1:
+        return number
     else:
-        print(number)
-        reduce(number-1)
-reduce(5)
+        total = number % 10 + sum(number // 10)
+    return total
+    
+
+print(sum(4725))
