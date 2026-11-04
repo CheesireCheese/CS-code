@@ -41,6 +41,5 @@ def RecursiveBinarySearch(intarray, lower, upper, value):
         return "Not found"
 
 #fi
-for i in range(3):
-    Integer = int(input("enter value "))
-    print(RecursiveBinarySearch(array, 0, 19, Integer))
+Integer = int(input("enter value "))
+print(RecursiveBinarySearch(array, 0, 19, Integer))
