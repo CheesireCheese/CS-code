@@ -48,3 +48,26 @@ bank.deposit(69420)
 bank.withdraw(67)
 bank.withdraw(9999999999999999999999999)
 print(bank.GetBalance())
+
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.score = 0
+    def add_marks(self, amount):
+        self.score += amount
+
+class Classroom:
+    def __init__(self):
+        self.student = []
+    def add_student(self, student):
+        self.student.append(student)
+    def print_student(self):
+        for i in self.student:
+            print(i.name,"name", i.score)
+        return ""
+Lam = Student("Lam")
+Hien = Student("Hien")
+Cs = Classroom()
+Cs.add_student(Lam)
+Cs.add_student(Hien)
+print(Cs.print_student())
