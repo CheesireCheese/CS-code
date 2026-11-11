@@ -19,3 +19,20 @@ player[1] = Player("b", 2)
 player[2] = Player("c", 3)
 for i in range(3):
     print(player[i].GetLevel())
+
+class media:
+    def __init__(self, title):
+        self.__title = title
+    def GetTitle(self):
+        return self.__title
+    def GetDescription(self):
+        return "Media: " + self.__title
+
+class EBook(media):     #? Inheritance
+    def __init__(self, title, file_size):
+        super().__init__(title)             #? this calls the parent constructor
+        self.__file_size = file_size2
+    def GetFileSize(self):
+        return self.__file_size
+    def GetDescription(self):
+        return
