@@ -34,7 +34,7 @@ def search(target):
     global root
     current = root  #? begin at the root node
     while current != -1:
-        current_data = tree[current][0]
+        current_data = tree[current][DATA]
 
         if target == current_data:
             print("found at index ",current)
