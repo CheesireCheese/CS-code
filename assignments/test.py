@@ -31,7 +31,7 @@ class media:
 class EBook(media):     #? Inheritance
     def __init__(self, title, file_size):
         super().__init__(title)             #? this calls the parent constructor
-        self.__file_size = file_size2
+        self.__file_size = file_size
     def GetFileSize(self):
         return self.__file_size
     def GetDescription(self):
